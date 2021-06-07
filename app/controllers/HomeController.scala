@@ -1,6 +1,6 @@
 package controllers
 
-import akka.actor.typed.ActorRef
+import akka.actor.ActorRef
 
 import javax.inject._
 import play.api.mvc._
