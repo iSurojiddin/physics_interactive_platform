@@ -1,15 +1,4 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@()
-
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
-    <h1 class="bg-secondary">Hello World,</h1>
-
+@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@main("Index Page", webJarsUtil) {
+    <h1 class="text-success">This is Index page</h1>
 }
