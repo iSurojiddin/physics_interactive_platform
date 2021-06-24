@@ -1,0 +1,65 @@
+@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@main("Test topshirish", webJarsUtil) {
+    @header()
+
+    <main id="main">
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Test topshirish</h2>
+                    <ol>
+                        <li><a href="/">Asosiy</a></li>
+                        <li>Test</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-page">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Yerning tortishish kuchining birligi nima?</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> Km/H
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> Kg
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> Nyuton
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> L
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="d-inline">
+                    <div class="d-inline">
+                        <h3 class="d-inline">
+                            <span class="badge badge-danger">9:57</span>
+                            <span class="badge badge-secondary">1 / 10</span>
+                        </h3>
+                    </div>
+                    <div class="d-inline float-right">
+                        <a href="#" class="btn-send">Jo'natish</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @footer()
+}

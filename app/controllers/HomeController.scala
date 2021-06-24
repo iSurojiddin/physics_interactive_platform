@@ -23,6 +23,11 @@ import scala.util.Random
 class HomeController @Inject()(val controllerComponents: ControllerComponents,
                                val configuration: Configuration,
                                indexTemplate: views.html.index,
+                               signinTemplate: views.html.signin,
+                               signupTemplate: views.html.signup,
+                               topicsTemplate: views.html.topics,
+                               testTemplate: views.html.test,
+                               resultsTemplate: views.html.results,
                                @Named("report-manager") val lessonManager: ActorRef,
                                implicit val actorSystem: ActorSystem,
                                implicit val webJarsUtil: WebJarsUtil)
@@ -33,5 +38,25 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents,
 
     def index = Action {
       Ok(indexTemplate())
+    }
+
+    def signin = Action {
+      Ok(signinTemplate())
+    }
+
+    def signup = Action {
+      Ok(signupTemplate())
+    }
+
+    def topics = Action {
+      Ok(topicsTemplate())
+    }
+
+    def test = Action {
+      Ok(testTemplate())
+    }
+
+    def results = Action {
+      Ok(resultsTemplate())
     }
 }

@@ -1,4 +1,443 @@
 @this(webJarsUtil: org.webjars.play.WebJarsUtil)
-@main("Index Page", webJarsUtil) {
-    <h1 class="text-success">This is Index page</h1>
+@main("Fizika fani uchun interaktiv platforma", webJarsUtil) {
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo mr-auto"><a href="/">UBTUIT</a></h1>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="/">Asosiy</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#faq">Qo'llanma</a></li>
+                    <li><a href="#testimonials">Iqtiboslar</a></li>
+                    <li><a href="#team">Bizning jamoa</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <a href="#about" class="get-started-btn scrollto">Kirish</a>
+        </div>
+    </header>
+
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1>Fizika fani uchun interaktiv platforma</h1>
+                    <h2>Fizika fanidan foydali mavzular va qiziqarli testlar to'plami. Tizim haqida batafsil malumot olish uchun pastdagi xavola orqali videoni tamosha qiling!</h2>
+                    <div class="d-flex">
+                        <a href="#about" class="btn-get-started scrollto">Boshlash</a>
+                        <a href="https://www.youtube.com" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Videoni ko'rish <i class="icofont-play-alt-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <img src="@routes.Assets.versioned("images/professor-bro.svg")" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <section id="featured-services" class="featured-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="icofont-graduate-alt"></i></div>
+                            <h4 class="title"><a href="">Bepul ta'lim</a></h4>
+                            <p class="description">Fizika fanidan qiziqarli va foydali mavzularni sodda va tushunarli video darsliklar orqali o'rganish</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="icofont-tick-boxed"></i></div>
+                            <h4 class="title"><a href="">Bilimni testlash</a></h4>
+                            <p class="description">Mavzularda orttirilgan bilim va tajribalarinigizni testlar orqali bilim darajangizni baholash imkoniyati</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="icofont-badge"></i></div>
+                            <h4 class="title"><a href="">Yutuqlar</a></h4>
+                            <p class="description">Testlarda yuqori natijaga erishish orqali davlat grandlarini yutib olish imkoniyatini qo'lga kiritish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="@routes.Assets.versioned("images/exams-bro.svg")" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>Bizning oldimizga qo'ygan maqsadlarimiz</h3>
+                        <p class="font-italic">
+                            Fizika fani uchun interaktiv platforma yaratishimizdan maqsad quydagilardan iborat.
+                        </p>
+                        <p>
+                            Yosh avlodning bo’sh vaqtini qiziqarli va foydali o’tkazishini taminlash hamda yoshlarning bo’sh vaqtlarini behuda va zararli narsalar bilan o’tkazishini oldini olish. Hamda ota-onalar farzandlarini bo’sh vaqtini nazorat qilib turishini taminlash. Shuningdek yosh avlodni
+                        </p>
+                        <ul>
+                            <li><i class="icofont-check-circled"></i> Fizika faniga qiziqishini oshirish</li>
+                            <li><i class="icofont-check-circled"></i> Fizika fani bo’yicha bilimlarini mustahkamlash</li>
+                            <li><i class="icofont-check-circled"></i> Fizika fani bo'yicha tanlovlarda qatnashish imkoniyatiga ega bo'lish</li>
+                        </ul>
+                        <p>
+                            Hamda yosh avlodning fizika fani bo’yicha olgan bilimini mustahkamlash va yanada oshirish kabi muhim jarayonlarni o’z ichiga oladi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="counts" class="counts">
+            <div class="container">
+                <div class="row counters">
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">232</span>
+                        <p>Foydalanuvchilar</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">521</span>
+                        <p>Mavzular</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">1,463</span>
+                        <p>Testlar</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">15</span>
+                        <p>Sovrunlar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <span>Qo'llanma</span>
+                    <h2>Qo'llanma</h2>
+                    <p>Tizimdan foydalanishda ko'p beriladigan savollarga javoblar</p>
+                </div>
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Tizimga qanday qilib kirsa bo'ladi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                                <p>
+                                    Tizimdan foydalanish uchun oldin o'z akountizga ega bo'lishingiz kerak. Agar akountiz bo'sa saytimizdagi "Kirish" orqali akountizga kirishingiz mumkun. Agar bo'lmasa "Ro'yhatdan o'tish" bo'limi orqali akount yaratishingiz mumkun.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Mavzularni qanday o'rgansam bo'ladi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Tizimdagi mavzularni o'qib o'rganishinggiz uchun tizimimizdagi "Mavzular" bo'limi orqali mavzular ro'yxatiga kirishingiz mumkun va u yerdan mavzularni ustiga bosish orqali shu mavzuga kirib mavzu bo'yicha video darslik ko'rishingiz mumkun
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Qanday test topshirsam bo'ladi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Mavzu bo'yicha video darslik ko'rib bo'lganingizdan so'ng video tagida "Testni boshlash" tugmasi chiqadi. Shu tugmani bosish orqali test ishlashingiz mumkun. Testda video darslik bo'yicha 10 ta savol  4 ta varianti bilan beriladi. O'zingiz to'g'ti deb o'ylagan javobni belgilab "Jo'natish" tugmasi orqali keyingi savollarga javob berishingiz mumkun.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Test natijalarimni qayerdan bilib olsam bo'ladi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Testdagi 10 ta savolga javob berganingizdan so'ng test natijasi chiqadi. Agarda oldingi test natijalarini bilmoqchi bo'lsangiz, menyudagi "Natijalar" bo'limiga kirish orqali barcha test natijalaringizni qachon va qaysi mavzu testidan qancha ball olganingizni bilib olishingiz mumkun.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Grandlarni qanday yutib olsam bo'ladi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Davlat va tashkilotlar tamonidan tanlov grandlarini yutish uchun siz tizimimizdagi testlarni a'lo baholarga topshirsangiz kifoya. Biz sizni tanlov qatnashchilari orasiga sizni qo'shib qo'yamiz. Sizdan faqat bilim olish talab etiladi ;)
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <span>Iqtiboslar</span>
+                    <h2>Iqtiboslar</h2>
+                    <p>Buyuk olimlarning eng yaxshi va eng yorqin iqtiboslari</p>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Yigitcha yoqimtoy qiz bilan quchoqlashib o'tirganda, butun soat bir daqiqa o'tib ketadi. Ammo uni issiq pechka ustiga qo'ying, va bir daqiqa bir soatga o'xshaydi. Bu nisbiylik nazariyasi.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Ilm to'liq kitob emas va bo'lmaydi. Har qanday muhim muvaffaqiyat yangi savollar tug'diradi. Har qanday rivojlanish vaqt o'tishi bilan yangi va chuqurroq qiyinchiliklarni ochib beradi.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Aksariyat odamlar noto'g'ri bo'lishidan qo'rqib, yangi narsalarni sinab ko'rishmaydi. Ammo bundan qo'rqmaslik kerak. Ko'pincha mag'lubiyatga uchragan kishi zudlik bilan muvaffaqiyatga erishgan kishiga qaraganda ko'proq g'alaba qozonish haqida ko'proq bilib oladi.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            G'or davridan beri insoniyat qanchalik rivojlanganini tushunganingizda, tasavvur kuchi to'liq miqyosda seziladi. Hozirda mavjud bo'lgan narsalarga bizning bobomizning tasavvurlari yordamida erishiladi. Kelajakda bor narsalar bizning tasavvurimiz bilan quriladi.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Muvaffaqiyatga erishish uchun emas, hayoting ma'no kasb etishi uchun intil. Odamning hayoti boshqalar hayotini qay darajada go‘zal va mazmunli etganiga qarab ahamiyatlidir.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Tasavvur bilimdan ko‘ra ko‘proq ahamiyatga ega. Bilim biz hozir biladigan va tushunadigan narsalargagina tayanadi. Tasavvur esa butun olamni va biz qachonlardir tushunadigan, bilib oladigan narsalarni ham qamraydi.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="@routes.Assets.versioned("images/AlbertEinstein.jpg")" class="testimonial-img" alt="#">
+                        <h3>Albert Eynshteyn</h3>
+                        <h4>Fizik olim</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <span>Jamoamiz</span>
+                    <h2>Jamoamiz</h2>
+                    <p>Bizning quvnoq va inoq jamoamiz haqida</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="@routes.Assets.versioned("images/team.jpg")" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Matchonov Adilbek</h4>
+                                <span>Bosh direktor</span>
+                                <p>Korxona bosh direktori va homiysi</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/isurojiddin" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://facebook.com/isurojiddin" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://instagram.com/isurojiddin" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://t.me/isurojiddin" class="google-plus"><i class="bx bxl-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="pic"><img src="@routes.Assets.versioned("images/team.jpg")" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sarah Jhonson</h4>
+                                <span>Katta o'qtuvchi</span>
+                                <p>Fizika fani doctori. 35 yillik tajribaga ega.</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/isurojiddin" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://facebook.com/isurojiddin" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://instagram.com/isurojiddin" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://t.me/isurojiddin" class="google-plus"><i class="bx bxl-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="pic"><img src="@routes.Assets.versioned("images/team.jpg")" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>William Anderson</h4>
+                                <span>O'qtuvchi</span>
+                                <p>Fizika fani o'qtuvchisi. 11 yillik tajribaga ega.</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/isurojiddin" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://facebook.com/isurojiddin" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://instagram.com/isurojiddin" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://t.me/isurojiddin" class="google-plus"><i class="bx bxl-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="pic"><img src="@routes.Assets.versioned("images/team.jpg")" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Jumaniyozov Surojiddin</h4>
+                                <span>Project Manager</span>
+                                <p>Web Developer, Full-Stack Master, Senior Developer.</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/isurojiddin" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://facebook.com/isurojiddin" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://instagram.com/isurojiddin" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://t.me/isurojiddin" class="google-plus"><i class="bx bxl-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <span>Biz Bilan Aloqa</span>
+                    <h2>Biz Bilan Aloqa</h2>
+                    <p>Biz uchun sizning fikr va takliflaringiz juda muhum!</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="icofont-google-map"></i>
+                                <h4>Manzil:</h4>
+                                <p>220100, Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi, 110-uy</p>
+                            </div>
+                            <div class="email">
+                                <i class="icofont-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>info@@ubtuit.uz</p>
+                            </div>
+                            <div class="phone">
+                                <i class="icofont-phone"></i>
+                                <h4>Telefon:</h4>
+                                <p>+998 (62) 224-61-32</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.016211468572!2d60.62891805734385!3d41.57011988531727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfcec63d012a49%3A0xa2280e571ee2fa3e!2sTatu%20Urganch%20Filiali!5e0!3m2!1suz!2s!4v1614331296341!5m2!1suz!2s" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="#" method="post" role="form" class="php-email-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Ismingiz:</label>
+                                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Emailingiz:</label>
+                                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Mavzu:</label>
+                                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Xabar:</label>
+                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="loading">Yuborilmoqda</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Sizning xabaringiz jo'natildi. Katta rahmat!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Jo'natish</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>UBTUIT</h3>
+                        <p>
+                            220100, Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi, 110-uy<br><br>
+                            <strong>Telefon:</strong> +998 (62) 224-61-32<br>
+                            <strong>Faks:</strong> 0362-224-61-32<br>
+                            <strong>Email:</strong> info@@ubtuit.uz<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Bo'limlar</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/">Asosiy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">Biz haqimizda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#faq">Qo'llanma</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#team">Bizning jamoa</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Yangiliklarimiz</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Iqtiboslar</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Biz ijtimoiy tarmoqlarda</h4>
+                        <p>Bizni ijtimoiy tarmoqlar orqali kuzatib boring...</p>
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/isurojiddin" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://facebook.com/isurojiddin" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://instagram.com/isurojiddin" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://t.me/isurojiddin" class="google-plus"><i class="bx bxl-telegram"></i></a>
+                            <a href="https://github.com/isurojiddin" class="google-plus"><i class="bx bxl-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                        &copy; Copyright <strong><span>UBTUIT</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Project by <a href="https://instagram.com/isurojiddin">Jumaniyozov Surojiddin</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 }

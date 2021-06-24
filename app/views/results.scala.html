@@ -1,0 +1,58 @@
+@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@main("Natijalar ro'yhati", webJarsUtil) {
+    @header()
+
+    <main id="main">
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Natijalar ro'yhati</h2>
+                    <ol>
+                        <li><a href="/">Asosiy</a></li>
+                        <li>Natijalar</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-page">
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Test mavzusi</th>
+                            <th>Topshirgan vaqti</th>
+                            <th>Natija</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Energiyaning saqlanish qonuni</td>
+                            <td>23.06.2021 22:18</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>Impulsning saqlanish qonuni</td>
+                            <td>21.06.2021 09:51</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Yerning tortishish kuchi</td>
+                            <td>19.06.2021 17:33</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Gorizontal otilgan jismning harakati</td>
+                            <td>19.06.2021 17:33</td>
+                            <td>70%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    @footer()
+}

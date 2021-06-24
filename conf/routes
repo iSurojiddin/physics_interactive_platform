@@ -1,4 +1,9 @@
 GET     /                           controllers.HomeController.index
+GET     /sign-in                    controllers.HomeController.signin
+GET     /sign-up                    controllers.HomeController.signup
+GET     /topics                     controllers.HomeController.topics
+GET     /test                       controllers.HomeController.test
+GET     /results                    controllers.HomeController.results
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               @controllers.Assets.versioned(path="/public", file: Asset)
