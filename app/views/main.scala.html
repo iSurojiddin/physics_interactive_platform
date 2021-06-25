@@ -39,5 +39,17 @@
     <script src="@routes.Assets.versioned("vendor/venobox/venobox.min.js")"></script>
     <script src="@routes.Assets.versioned("vendor/owl.carousel/owl.carousel.min.js")"></script>
     <script src="@routes.Assets.versioned("js/main.js")"></script>
+    <script src="@routes.Assets.versioned("js/popper.min.js")"></script>
+    <script>
+        $(document).ready(function (){
+            $('[data-toggle="popover"]').popover();
+            $('#btn').hide();
+            function showpanel() {
+                $("#btn").show();
+                $("#btn2").hide();
+            }
+            setTimeout(showpanel, 30000)
+        });
+    </script>
     </body>
 </html>
