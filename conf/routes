@@ -2,6 +2,7 @@ GET     /                           controllers.HomeController.index
 GET     /sign-in                    controllers.HomeController.signin
 GET     /sign-up                    controllers.HomeController.signup
 GET     /topics                     controllers.HomeController.topics
+GET     /topic/1                    controllers.HomeController.topic
 GET     /test                       controllers.HomeController.test
 GET     /results                    controllers.HomeController.results
 

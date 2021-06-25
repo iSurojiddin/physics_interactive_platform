@@ -26,6 +26,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents,
                                signinTemplate: views.html.signin,
                                signupTemplate: views.html.signup,
                                topicsTemplate: views.html.topics,
+                               topicTemplate: views.html.topic,
                                testTemplate: views.html.test,
                                resultsTemplate: views.html.results,
                                @Named("report-manager") val lessonManager: ActorRef,
@@ -50,6 +51,10 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents,
 
     def topics = Action {
       Ok(topicsTemplate())
+    }
+
+    def topic = Action {
+      Ok(topicTemplate())
     }
 
     def test = Action {
